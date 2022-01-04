@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Website</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <style>
+      .img_slide{
+        width: 100%;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .img{
+        width: 450px;
+        height: 300px;
+      }
+
+      .item img{
+          width: 450px;
+          height: 300px;
+          border: 2px solid #ffd700;
+      }
+
+
+      * {
+          margin: 0;
+          padding: 0;
+      }
+
+      nav .container-fluid a img{
+        width: 65px;
+        height: 65px;
+        border-radius: 50%;
+      }
+      
+      header {
+        background: #ffa500;
+        margin-top: 10px;
+      }
+      
+      .content {
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          flex-direction: column;
+          height: 100%;
+      }
+      
+      .video {
+          margin-top: 10px;
+          margin-bottom: 10px;
+      }
+
+            html {
+        scroll-behavior: smooth;
+        }
+
+        body{
+            background-image: url(85639067-school-building-on-white-background-back-to-school-the-facade-of-the-old-college-vector-flat-illustr.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        #map iframe
+        {
+            width: 50%;
+            float: left;
+            padding-top: 5px;
+        }
+
+        .contact_1 h3
+        {
+            display: inline;
+        }
+        .contact_1 a
+        {
+            text-shadow: none;
+        }
+
+        #footer{
+        height: 20px;
+        background-color:white;
+        }
+
+        input
+        {
+            background: grey
+        }
+
+        .announcement{
+        background-color:#337ab7;
+        width: 100%;
+        height: 30px;
+        }
+
+        #marqueeStyle{
+        width:100%;
+        direction:right;
+        height:100px;
+        color: beige;
+        font-size:120%;
+        }
+
+        #video{
+        width:100%;
+        height:500px;
+        border: none;
+        }
+
+        .row::after {
+        content: "";
+        clear: both;
+        display: table;
+        }
+
+        .travel_mainDiv
+        {
+        float: left;
+        width: 33.33%;
+        padding: 5px;
+        border: 1px solid #c7c7c7;
+        }
+
+        .travel_mainDiv img
+        {
+        width: 100%;
+        height:300px;
+        } 
+
+        .travel_mainDiv hr
+        {
+            width: 100%; 
+        }
+
+        .travel_mainDiv h5 , .travel_mainDiv p
+        {
+        margin-left: 20px;
+        }
+
+
+        #achievementsID{
+        padding-bottom: 10px;
+        }
+
+        .list-group-item{
+            background-color: #00ff009f;
+        }
+
+        .movie_head
+        {
+            font-size: 20px;
+            padding: 6px 22px;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            width: 100%;
+            display: inline-block;
+        }
+
+        .movie_head i
+        {
+        float: right;
+        }
+
+        .movie_text span
+        {
+        color: #ff7700;
+        }
+      
+      .location {
+          width: 100%;
+          display: grid;
+          place-items: center;
+          margin-bottom: 10px;
+          color: #f00;
+      }
+      
+      .location iframe {
+          width: 90%;
+      }
+      
+      .contact {
+          margin-bottom: 10px;
+      }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="logo" href="#" style="color: #000; text-decoration: none; margin-left: -690px;"><img src="https://obj.whitehatjr.com/84a8a7c0-1bb4-4564-a28a-607f55b9db49.jpg" alt="logo"> DAKS: Coding</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent" style="margin-left: -650px;">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#location">Location</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#campus">Campus Life</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#achievements">School Achievement</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="img_slide">
+        <div class="img">
+          <div id="myCarouse2" class="carousel slide">
+              <div class="carousel-inner">
+                  <div class="item active">
+                      <center>
+                          <img src="https://mrcahmedabad.kvs.ac.in/sites/default/files/styles/medium/public/WhatsApp%20Image%202019-08-31%20at%2009.09.40.jpeg?itok=HZYJArBr">
+                      </center>
+                  </div>
+                  <div class="item">
+                      <center>
+                          <img src="https://mrcahmedabad.kvs.ac.in/sites/default/files/styles/medium/public/WhatsApp%20Image%202019-07-26%20at%2011.36.07_0.jpeg?itok=JeSbuY7M">
+                      </center>
+                  </div>
+                  <div class="item">
+                      <center>
+                          <img src="https://mrcahmedabad.kvs.ac.in/sites/default/files/styles/medium/public/WhatsApp%20Image%202019-08-16%20at%2011.50.46%286%29.jpeg?itok=gwBfemkW">
+                      </center>
+                  </div>
+              </div>
+              <a class="left carousel-control" href="#myCarouse2" data-slide="prev">
+                  <span class="glyphicon glyphicon-chevron-left"></span>
+              </a>
+              <a class="right carousel-control" href="#myCarouse2" data-slide="next">
+                  <span class="glyphicon glyphicon-chevron-right"></span>
+              </a>
+          </div>
+        </div>
+      </div>
+    <header>
+        <marquee behavior="Scroll" direction="right">Kendriya Vidyalaya No.1 Shahibaug Ahmedabad</marquee>
+    </header>
+    <div class="content">
+        <div class="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/1scFXale2rU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="page-header" id="campus_life">
+            <h2 class="text-capitalize" style="color: #000; text-decoration: none;"><a name="campus"> Campus Life </a></h2>
+
+            <div class="row">
+                <div class="travel_mainDiv">
+                    <img class="img-responsive" src="https://mrcahmedabad.kvs.ac.in/sites/default/files/computer%20lab_6.jpg">
+                    <h4 class="text-capitalize"><kbd>school computer lab</kbd></h4>
+                </div>
+                <div class="travel_mainDiv">
+                    <img class="" src="https://mrcahmedabad.kvs.ac.in/sites/default/files/library_2.jpg">
+                    <h4 class="text-capitalize"><kbd>school library</kbd></h4>
+                </div>
+                <div class="travel_mainDiv">
+                    <img class="img-responsive" src="https://mrcahmedabad.kvs.ac.in/sites/default/files/chem%20lab_1.jpg">
+                    <h4 class=""><kbd>school science lab</kbd></h4>
+                </div>
+
+            </div>
+        </div>
+        <div class="page-header" id="achievements">
+            <h2 class="text-capitalize" style="color: #000; text-decoration: none;"><a name="achievements"> school achievements </a></h2>
+        </div>
+        <div class="bg-primary movie_head" data-toggle="collapse" data-target="#school_achievement1">
+            International Day Of Yoga <i class="fa fa-sort-desc"></i>
+        </div>
+        <div id="school_achievement1" class="collapse">
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12" id="achievementsID">
+                <img src="https://mrcahmedabad.kvs.ac.in/sites/default/files/IMG_20190621_084505.jpg" class="img-responsive img-thumbnail">
+            </div>
+        </div>
+        <div class="bg-primary movie_head" data-toggle="collapse" data-target="#school_achievement2">
+            Book Fair<i class="fa fa-sort-desc"></i>
+        </div>
+
+        <div id="school_achievement2" class="collapse">
+
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12" id="achievementsID">
+                
+                <img src="https://mrcahmedabad.kvs.ac.in/sites/default/files/WhatsApp%20Image%202019-06-25%20at%201.20.17%20PM_0.jpeg" class="img-responsive img-thumbnail">
+            </div>
+        </div>
+
+        <div class="bg-primary  movie_head" data-toggle="collapse" data-target="#school_achievement3">
+            Commissioner Visit <i class="fa fa-sort-desc"></i>
+        </div>
+
+        <div id="school_achievement3" class="collapse">
+            <div class="" id="achievementsID">
+                <img src="https://mrcahmedabad.kvs.ac.in/sites/default/files/WhatsApp%20Image%202019-04-16%20at%2010.02.24.jpeg" class="img-responsive img-thumbnail">
+            </div>
+        </div>
+        <div class="page-header col-lg-12 col-md-12 col-sm-12 col-xs-12" id="new">
+            <h2 class="text-capitalize ">What's New</h2>
+        </div>
+
+        <ul class="list-group">
+            <li class="list-group-item  col-lg-12 col-md-12 col-sm-12 col-xs-12 environment_li">
+                <h4>New School Canteen</h4>
+                <img src="https://live.staticflickr.com/2110/2196260331_c6592e8dab_c.jpg" class="img-responsive col-lg-5 col-md-5 col-sm-5 col-xs-12">
+                <p class="list-group-item-text">The food options and responsibilities to consider, canteens must be better organised and more efficient than they have been in the past. Online menus with photographs of the meals prepared, and detailed descriptions of their ingredients help both students and parents make the right nutritional choices. Each student or staff member who accesses the canteen could be provided with a School Canteen Account on the school website that keeps track of their previous meal choices and any dietary requirements they may have. Ordering online by ticking a box and paying for meals online can eliminate all the fuss of money handling, making it safer and less complicated for staff and students alike. Here again, diversity is the key.</p>
+            </li>
+        </ul>
+        <div class="location">
+            <h2 style="color: #000; text-decoration: none;"><a name="location"> Location </a></h2>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3671.2412664898593!2d72.58673461448934!3d23.05161472102764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e846d749ec9f7%3A0x14e59c63a756c268!2sKendriya%20Vidyalaya%20No.1%20Ahmedabad!5e0!3m2!1sen!2sin!4v1632053761455!5m2!1sen!2sin"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <div class="contact">
+            <h2 style="color: #000; text-decoration: none;"><a name="contact"> Contact Us </a></h2>
+            <h3>Princial Name: </h3>
+            <p>
+                Vinita Sharma
+                <br>
+                Phone no. : 1546897546
+            </p>
+        </div>
+        <div class="footer" style="width: 100%; height: 20px; text-align: center; background-color: #008000; font-size: 16px; color: #ff0;">
+            <p>Copyright &copy; <a target="_divyaveer" href="https://divyaveer3.whjr.site/"> Divyaveer </a></p>
+        </div>
+    </div>
+</body>
+
+</html>
